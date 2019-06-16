@@ -1,0 +1,131 @@
+body{
+    display: flex;
+    margin: 0px;
+    perspective: 1700px;
+    overflow-x: hidden;
+    background-color: rgba(255, 255, 255, 0.705);
+}
+.menu{
+    z-index: 3;
+    width: 250px;
+    height: 100vh;
+    flex-direction: row;
+    background-color: #00CCFF;
+    position: absolute;
+    transform: translateX(-200px);
+    overflow-x: hidden;
+}
+@keyframes menu1{
+    0%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes menu2{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-200px);
+    }
+}
+.main{
+    width: 100vw;
+    height: 100%;
+    margin-left: 50px;
+    padding: 0px;
+    flex-direction: row;
+    transform-origin: right;
+    overflow-x: hidden;
+}
+@media(max-width: 500px){
+
+}
+@keyframes main1 {
+    0%{
+        transform: rotateY(0deg) scale(1);
+        background-color: rgb(255, 255, 255);
+    }
+    100%{
+        transform: rotateY(-35deg) scale(0.6);
+        background-color: rgb(255, 255, 255);
+    }
+}
+@keyframes main2 {
+    0%{
+        transform: rotateY(-35deg) scale(0.6);
+        background-color: rgb(255, 255, 255);
+    }
+    100%{
+        transform: rotateY(0deg) scale(1);
+        background-color: rgb(255, 255, 255);
+    }
+}
+.button{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0px;
+    margin: 10px;
+    cursor: pointer;
+}
+.line1, .line2, .line3{
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 35%;
+}
+.line1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin: 0px;
+}
+.line2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+@keyframes line1{
+    0%{
+        top: 0px;
+        margin-top:10px;
+    }
+    100%{
+        top: 0px;
+        transform: rotateZ(-45deg);
+        margin-top:10px;
+    }
+}
+@keyframes line3{
+    0%{
+        top: 0px;
+        margin-top:10px;
+    }
+    100%{
+        top: 0px;
+        transform: rotateZ(45deg);
+        margin-top:10px;
+    }
+}
+.spisok{
+    margin-top: 60px;
+    list-style: none;
+    padding: 0px 10px;
+}
+.spisok li{
+    font-size: 20px;
+    padding: 9px 10px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    transition: .5s;
+}
+.spisok li:hover{
+    padding-left: 30px;
+}
+@import url('https://fonts.googleapis.com/css?family=Exo&display=swap');
+a{
+    text-decoration: none !important;
+    color: black !important;
+    font-family: 'Exo', sans-serif;
+}

@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Lora&display=swap');
+#fon{
+    background: url("img/muckup.png");
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: center;
+    min-height: 65vh;
+}
+.textHead{
+  font-size: 22px;
+  font-weight: 600;
+}
+#fon1{
+    background: url("img/fon2.jpg");
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: center;
+}
+#fon3{
+  background: url("img/wood.jpg");
+  background-size: cover;
+}
+#fon2{
+    background: url("img/fon1.png");
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+.section{
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Lora', serif;
+}
+.title{
+    font-weight: 600;
+    font-size: 24px;
+}
+.text{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 19px;
+}
+span{
+    font-weight: 700;
+}
+.butto {
+    background: #39cde9;
+    padding: 10px 30px;
+    display: inline-block;
+    font-family: 'interstate', monospace;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    font-size: 23px;
+    overflow: hidden;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    transition: .2s linear;
+  }
+.butto:hover{
+  box-shadow: inset 0px 0px 0px rgba(154, 147, 140, 0.5), 0px 0px 0px rgba(255, 255, 255, 1);
+}
+  .butto:after, .butto:before {
+    content: '';
+    position: absolute;
+    left: -50%;
+    right: -50%;
+    height: 0;
+    padding-bottom: 200%;
+    background: #34cce8;
+    mix-blend-mode: color-burn;
+    top: 0;
+    z-index: -1;
+    border-radius: 230px;
+  }
+  .butto:after {
+    opacity: 0;
+    animation: 2s move00 linear infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+  }
+  .butto:before {
+    animation: 2s move01 linear infinite;
+    animation-direction: alternate;
+  }
+  @keyframes move00{
+      0%{
+        transform: translate3d(-5%, 6em, 0) rotate(-45deg);
+        background: #34cce8;
+        opacity: 1;
+      }
+      100%{
+        transform: translate3d(0, -5em, 0) rotate(180deg);
+        background: #37c7e4;
+        opacity: 1;
+      }
+  }
+  @keyframes move01{
+    0%{
+        transform: translate3d(5%, 6em, 0) rotate(0deg);
+        background: #34cce8;
+    }
+    100%{
+        transform: translate3d(0, -5em, 0) rotate(180deg);
+        background: #37c7e4;
+    }
+}
+.order {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  position: relative;
+  color: rgb(0, 0, 0);
+  border: 1px solid transparent;
+  animation: color1 3.5s linear infinite;
+  text-transform: uppercase;
+}
+.order:before,
+.order:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.order:before {
+  bottom: 0;
+  left: 0;
+  border-left: 2px solid rgb(0, 0, 0);
+  border-top: 2px solid rgb(0, 0, 0);
+  animation: move1 3.5s linear infinite;
+}
+.order:after {
+  top: 0;
+  right: 0;
+  border-right: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+  animation: move2 3.5s linear infinite;
+
+}
+@keyframes move1{
+    0%{
+        width: 0%;
+        height: 0%;
+        opacity: 1;
+        bottom: 0;
+        left: 0;
+    }
+    25%{
+        height: 100%;
+        width: 0%;
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+    }
+    50%{
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+    }
+    75%{
+        width: 100%;
+        height: 0%;
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+    100%{
+        width: 0%;
+        height: 0%;
+        top: 0;
+        left: 100%;
+        opacity: 1;
+    }
+}
+@keyframes move2{
+    0%{
+        width: 0%;
+        height: 0%;
+        opacity: 1;
+        top: 0;
+        right: 0;
+    }
+    25%{
+        height: 100%;
+        width: 0%;
+        opacity: 1;
+        top: 0;
+        right: 0;
+    }
+    50%{
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        top: 0;
+        right: 0;
+    }
+    75%{
+        top: 100%;
+        right: 0;
+        width: 100%;
+        height: 0%;
+        opacity: 1;
+    }
+    100%{
+        width: 0%;
+        height: 0%;
+        opacity: 1;
+        top: 100%;
+        right: 100%;
+    }
+}

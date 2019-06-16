@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styleMain.css">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Инста</title>
+</head>
+<body>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <form action="mail.php" method="POST">
+                          <legend style="color: #666666">Заполните следующие поля</legend>
+
+                          <label for="validationDefault03">Ваше имя:</label>
+                          <input type="text" class="form-control mb-3" name="user_name" id="validationDefault03" placeholder="Максим" required>
+
+                          <label for="validationDefault04">Номер телефона:</label>
+                          <input type="tel" class="form-control mb-3" name="user_phone" id="validationDefault04" placeholder="+7 (999) 99 99 999" required>
+
+                          <label for="validationDefault04">Email:</label>
+                          <input type="email" class="form-control mb-3" name="user_email" id="validationDefault04" placeholder="example@mail.ru" required>
+
+                          <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Cолгасен на обработку персональных данных</label>
+                          </div>
+
+                          <button type="submit" id="check" class="btn request" style="background-color: #39cde9">Отправить заявку</button>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    <div class="menu">
+        <div class="button">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="spisok">
+            <li><a href="../../">Главная</a></li>
+            <li><a href="">Заказать сайт</a></li>
+            <li><a href="">Инстаграм-меню</a></li>
+            <li><a href="">Live чат</a></li>
+            <li><a href="">Продвижение, реклама</a></li>
+            <li><a href="">SEO оптимизация</a></li>
+            <li><a href="">Проверка сайта на качество</a></li>
+            <li><a href="">О нас</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="info">
+            <div class="container-fuild">
+                <div class="row py-5" id="fon">
+                    <div class="col-md-5 px-5 mx-5">
+                        <h1>Instagram меню</h1>
+                        <h3>Меню, которое подходит для <span id="slovo" style="font-weight: 500;"></span></h3>
+                        <br>
+                        <p class="textHead">Успейте оставить заявку в течение <span id="min">5</span>:<span id="sec">00</span><br>и получите в подарок 3 месяца бесплатного<br> размещения в Интернете!</p>
+                            <div class="pt-3"><a href="#" class="butto" data-toggle="modal" data-target="#exampleModal">Заказать</a></div>
+                    </div>
+                    <div class="col-md-1">
+
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+            </div>
+            <div class="container-fuild pt-5 bg-light">
+                <div class="row">
+                    <div class="col-md-6 px-5">
+                        <p class="text-center section">Что это такое?</p>
+                        <p class="text"><span>Instagram меню</span> - это в первую очередь удобный способ связи с вами. Больше не нужно 20 строчек с вашими контактами и ссылками на разные группы, аккаунты и сайты.</p>
+                        <p class="text">Теперь клиентам и подписчикам не нужно искать нужную ссылку или контакт у вас в профиле. Достаточно лишь нажать на одну единственную ссылку и откроется удобное и интуитивно понятное меню, которое поможет связаться с вами любым удобным способом</p>
+                        <p class="text">Индивидуальные предприниматели, интернет магазины и блогеры, вот наши потенциальные клиенты, которые хотят выделиться среди других с помощью Instagram меню.</p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="img/men.png" alt="" class="img-fuild">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fuild pt-5">
+                <div class="row d-flex justify-content-center">
+                    <p class="section">Почему именно Instagram</p>
+                </div>
+                <div class="row px-5">
+                    <div class="col-md-4 text-center">
+                        <p class="title mb-0">Численность</p>
+                        <p class="text">Публикации в разделе Instagram Stories просматривают 500 млн пользователей в день</p>
+                        <br>
+                        <p class="title mb-0">Удобная площадка</p>
+                        <p class="text">Посетители все еще восприимчивы к рекламе, так как её там еще не так много</p>
+                    </div>
+                    <div class="col-md-4 text-center mt-5">
+                        <img src="img/insta.gif" alt="">
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <p class="title mb-0">Охват</p>
+                        <p class="text">Instagram находится на втором месте в России по активности пользователей и третьем по численности</p>
+                        <br>
+                        <p class="title mb-0">Функциональность</p>
+                        <p class="text">Имеется различная статистика бизнес-аккаунта, удобство в общении с клиентами, облегчённый поиск товаров </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fuild px-5 py-5" id="fon1">
+                <div class="row d-flex justify-content-center">
+                    <p class="section text-white">Процесс разработки</p>
+                </div>
+                <div class="row text-white">
+                    <div class="col-md-3 text-center">
+                        <img src="img/talk.png" alt="">
+                        <p class="title">Договор</p>
+                        <p class="text">Исходя из оставленной заявки, мы предлагаем свои идеи и вместе с Вами их корректируем</p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <img src="img/draw.png" alt="">
+                        <p class="title">Разработка</p>
+                        <p class="text">В течение установленного срока мы всё делаем и в результате показываем вам готовое меню</p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <img src="img/correct.png" alt="">
+                        <p class="title">Доработки</p>
+                        <p class="text">Вы имеете право попросить небольшие изменения в меню (размеры, цвета, шрифты)</p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <img src="img/start.png" alt="">
+                        <p class="title">Запуск</p>
+                        <p class="text">Загрузка вашего меню в Интернет, передача всех авторских прав, отправка исходного кода</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fuild px-5 pt-5">
+                <div class="row d-flex justify-content-center">
+                    <p class="section">В отличие от конкурентов</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 align-text-bottom">
+                        <img src="img/women.png" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="title mb-0">Цена</p>
+                                <p class="text mb-0"><span>Мы</span>: от 200 до 650 рублей</p>
+                                <p class="text mb-0"><span>Конкуренты</span>: от 600 рублей</p>
+                                <br>
+                                <p class="title mb-0">Дизайн</p>
+                                <p class="text mb-0"><span>Мы</span>: индивидуальный</p>
+                                <p class="text mb-0"><span>Конкуренты</span>: по макету</p>
+                                <br>
+                                <p class="title mb-0">Функционал</p>
+                                <p class="text mb-0"><span>Мы</span>: делаем всё</p>
+                                <p class="text mb-0"><span>Конкуренты</span>: конкретный список</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="title mb-0">Разработка</p>
+                                <p class="text mb-0"><span>Мы</span>: в ручную</p>
+                                <p class="text mb-0"><span>Конкуренты</span>: конструкторы</p>
+                                <br>
+                                <p class="title mb-0">Ежемесячный платёж</p>
+                                <p class="text mb-0"><span>Мы</span>: 40 рублей</p>
+                                <p class="text mb-0"><span>Конкуренты</span>: от 100 рублей</p>
+                                <br>
+                                <p class="title mb-0">Сумма за год</p>
+                                <p class="text mb-0"><span>Мы</span>: от 680 рублей</p>
+                                <p class="text mb-0"><span>Конкуренты</span>: от 1800 рублей</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fuild px-5 py-5" id="fon3">
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <p class="text text-white">Скорее! Оставьте заявку и мы перезвоним Вам в кратчайшие сроки.<br> Так же подарим 3 месяца бесплатного размещения в Интернете!</p>
+                        <form action="mail.php" method="POST">
+                            <div class="form-row text-white">
+                                <div class="col-md-3 mb-3">
+                                <label for="validationDefault03">Имя</label>
+                                <input type="text" class="form-control" id="validationDefault03" name="user_name" placeholder="Максим" required>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                <label for="validationDefault04">Email</label>
+                                <input type="email" class="form-control" name="user_email" id="validationDefault04" placeholder="example@yandex.ru" required>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                <label for="validationDefault05">Телефон</label>
+                                <input type="text" class="form-control" id="validationDefault05" name="user_phone" placeholder="+7 (900) 541-69-77" required>
+                                </div>
+                                <div class="col-md-3 text-center" style="display: flex">
+                                    <div style="margin: auto;">
+                                        <button type="submit" class="order request" style="background-color: #39cde9">Отправить заявку</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fuild px-5 py-5 bg-light">
+                <div class="row d-flex justify-content-center">
+                    <p class="section">Что вам даёт Instagram меню</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 px-5">
+                        <table class="table table-striped text-center table-bordered">
+                            <thead>
+                                <tr>
+                                <th scope="col">Вид связи</th>
+                                <th scope="col">Посетителей</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>VK</td>
+                                <td>14%</td>
+                                </tr>
+                                <tr>
+                                <td>Сайт</td>
+                                <td>13%</td>
+                                </tr>
+                                <tr>
+                                <td>Телефонный звонок</td>
+                                <td>23%</td>
+                                </tr>
+                                <tr>
+                                <td>Viber</td>
+                                <td>6%</td>
+                                </tr>
+                                <tr>
+                                <td>WhatsApp</td>
+                                <td>7%</td>
+                                </tr>
+                                <tr>
+                                <td>Уход клиента</td>
+                                <td>37%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-6">
+                        <table class="table table-striped text-center table-bordered">
+                            <thead>
+                                <tr>
+                                <th scope="col">Вид связи</th>
+                                <th scope="col">Посетителей</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>VK</td>
+                                <td>20%</td>
+                                </tr>
+                                <tr>
+                                <td>Сайт</td>
+                                <td>19%</td>
+                                </tr>
+                                <tr>
+                                <td>Телефонный звонок</td>
+                                <td>29%</td>
+                                </tr>
+                                <tr>
+                                <td>Viber</td>
+                                <td>10%</td>
+                                </tr>
+                                <tr>
+                                <td>WhatsApp</td>
+                                <td>11%</td>
+                                </tr>
+                                <tr>
+                                <td>Уход клиента</td>
+                                <td>11%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="text" style="font-size: 15px;">*Данные указаны на основании общих тестов нашего меню. Ваше меню может показывать совершенно другие результаты.</p>
+                </div>
+            </div>
+            <div class="container-fuild px-5 py-5 text-white" id="fon2">
+                <div class="row d-flex justify-content-center">
+                    <p class="section">Посчитайте ваше будущее меню</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form class="needs-validation" novalidate>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                <label class="my-1 mr-2" for="fon">Фон</label>
+                                <select class="custom-select my-1 mr-sm-2">
+                                    <option value="60" selected>Однотонный цвет</option>
+                                    <option value="90">Любые обои (разрешение от 1920 Х 1080)</option>
+                                    <option value="170">Наложение обоев и однотонного цвета</option>
+                                </select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                <label class="my-1 mr-2" for="animation">Анимация</label>
+                                <select class="custom-select my-1 mr-sm-2" id="animation">
+                                    <option value="60" selected>Нет</option>
+                                    <option value="100">Линейная 2D</option>
+                                    <option value="150">Функциональная 2D</option>
+                                    <option value="130">Линейная 3D</option>
+                                    <option value="180">Функциональная 3D</option>
+                                </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="my-1 mr-2" for="link">Ссылка на наш сайт</label>
+                                    <select class="custom-select my-1 mr-sm-2" id="link">
+                                        <option value="30" selected>Да</option>
+                                        <option value="100">Нет</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="my-1 mr-2" for="adress">Адрес меню</label>
+                                    <select class="custom-select my-1 mr-sm-2" id="adress">
+                                        <option value="50" selected>mid7.ru/insta/...</option>
+                                        <option value="90">mid7.ru/...</option>
+                                        <option value="-20">Полностью ваше название</option>
+                                    </select>
+                                </div>
+                                </div>
+                                <div class="form-row">
+                                <div class="col-md-4 mb-3">
+                                    <label class="my-1 mr-2" for="price">Ваша цена:</label>
+                                    <input type="text" class="form-control bg-light" readonly id="price">
+                                </div>
+                                <div class="col-md-4 mb-3 text-center">
+                                        <div class="pt-3"><a href="#" class="butto" data-toggle="modal" data-target="#exampleModal">Заказать</a></div>
+
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                </div>
+                                </div>
+                        </form>
+                        <p class="text" style="font-size: 15px;">* Все цены указаны с примерным расчётом и могут варьироваться +/- 100 рублей. В цену не входит ежемесячный платёж.</p>
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="../../jquery-1.11.0.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script src="../scriptMain.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
