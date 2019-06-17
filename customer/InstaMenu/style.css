@@ -42,70 +42,7 @@
 span{
     font-weight: 700;
 }
-.butto {
-    background: #39cde9;
-    padding: 10px 30px;
-    display: inline-block;
-    font-family: 'interstate', monospace;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    position: relative;
-    z-index: 1;
-    border-radius: 10px;
-    font-size: 23px;
-    overflow: hidden;
-    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
-    transition: .2s linear;
-  }
-.butto:hover{
-  box-shadow: inset 0px 0px 0px rgba(154, 147, 140, 0.5), 0px 0px 0px rgba(255, 255, 255, 1);
-}
-  .butto:after, .butto:before {
-    content: '';
-    position: absolute;
-    left: -50%;
-    right: -50%;
-    height: 0;
-    padding-bottom: 200%;
-    background: #34cce8;
-    mix-blend-mode: color-burn;
-    top: 0;
-    z-index: -1;
-    border-radius: 230px;
-  }
-  .butto:after {
-    opacity: 0;
-    animation: 2s move00 linear infinite;
-    animation-direction: alternate;
-    animation-delay: 2s;
-  }
-  .butto:before {
-    animation: 2s move01 linear infinite;
-    animation-direction: alternate;
-  }
-  @keyframes move00{
-      0%{
-        transform: translate3d(-5%, 6em, 0) rotate(-45deg);
-        background: #34cce8;
-        opacity: 1;
-      }
-      100%{
-        transform: translate3d(0, -5em, 0) rotate(180deg);
-        background: #37c7e4;
-        opacity: 1;
-      }
-  }
-  @keyframes move01{
-    0%{
-        transform: translate3d(5%, 6em, 0) rotate(0deg);
-        background: #34cce8;
-    }
-    100%{
-        transform: translate3d(0, -5em, 0) rotate(180deg);
-        background: #37c7e4;
-    }
-}
+
 .order {
   text-decoration: none;
   outline: none;
@@ -117,6 +54,7 @@ span{
   border: 1px solid transparent;
   animation: color1 3.5s linear infinite;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .order:before,
 .order:after {
