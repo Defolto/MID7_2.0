@@ -1,0 +1,12 @@
+#block1{
+    background: url("img/Office.gif");
+    background-position-x: left;
+    background-position-y: center;
+    background-size: cover;
+    min-height: 75vh;
+    width: 100%;
+}
+.blockWhite{
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(252, 252, 252, 0.901));
+    min-height: 75vh;
+}

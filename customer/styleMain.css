@@ -1,9 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Lora&display=swap');
 body{
     display: flex;
     margin: 0px;
     perspective: 1700px;
     overflow-x: hidden;
     background-color: rgba(255, 255, 255, 0.705);
+}
+/* Названия новых блоков */
+.section{
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Lora', serif;
+}
+/* Заголовки для пунктов */
+.title{
+    font-weight: 600;
+    font-size: 24px;
+}
+/* Любой текст */
+.text{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 19px;
+}
+/* Выделение */
+span{
+    font-weight: 700;
 }
 .menu{
     z-index: 3;
@@ -14,6 +35,7 @@ body{
     position: absolute;
     transform: translateX(-200px);
     overflow-x: hidden;
+
 }
 @keyframes menu1{
     0%{
@@ -129,3 +151,114 @@ a{
     color: black !important;
     font-family: 'Exo', sans-serif;
 }
+.order {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 10px 20px;
+    position: relative;
+    color: rgb(0, 0, 0);
+    border: 1px solid transparent;
+    animation: color1 3.5s linear infinite;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .order:before,
+  .order:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    box-sizing: border-box;
+  }
+  .order:before {
+    bottom: 0;
+    left: 0;
+    border-left: 2px solid rgb(0, 0, 0);
+    border-top: 2px solid rgb(0, 0, 0);
+    animation: move1 3.5s linear infinite;
+  }
+  .order:after {
+    top: 0;
+    right: 0;
+    border-right: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    animation: move2 3.5s linear infinite;
+
+  }
+  @keyframes move1{
+      0%{
+          width: 0%;
+          height: 0%;
+          opacity: 1;
+          bottom: 0;
+          left: 0;
+      }
+      25%{
+          height: 100%;
+          width: 0%;
+          bottom: 0;
+          left: 0;
+          opacity: 1;
+      }
+      50%{
+          width: 100%;
+          height: 100%;
+          bottom: 0;
+          left: 0;
+          opacity: 1;
+      }
+      75%{
+          width: 100%;
+          height: 0%;
+          top: 0;
+          left: 0;
+          opacity: 1;
+      }
+      100%{
+          width: 0%;
+          height: 0%;
+          top: 0;
+          left: 100%;
+          opacity: 1;
+      }
+  }
+  @keyframes move2{
+      0%{
+          width: 0%;
+          height: 0%;
+          opacity: 1;
+          top: 0;
+          right: 0;
+      }
+      25%{
+          height: 100%;
+          width: 0%;
+          opacity: 1;
+          top: 0;
+          right: 0;
+      }
+      50%{
+          width: 100%;
+          height: 100%;
+          opacity: 1;
+          top: 0;
+          right: 0;
+      }
+      75%{
+          top: 100%;
+          right: 0;
+          width: 100%;
+          height: 0%;
+          opacity: 1;
+      }
+      100%{
+          width: 0%;
+          height: 0%;
+          opacity: 1;
+          top: 100%;
+          right: 100%;
+      }
+  }

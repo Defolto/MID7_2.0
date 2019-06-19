@@ -28,10 +28,10 @@ $(document).ready(function () {
         });
         $("#ico").removeClass("mx-5 px-5");
     }
-    if(($(window).innerHeight() < 557) || ($(window).innerWidth()) < 992){
-        $(".menu").css("height", "100%");
+    // if(($(window).innerHeight() < 557) || ($(window).innerWidth()) < 992){
+    //     $(".menu").css("height", "100%");
 
-    }
+    // }
     if ($(window).innerWidth() < 992){
         $(".col-lg-5").addClass("order-0");
         $(".col-lg-7").addClass("order-1");
