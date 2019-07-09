@@ -49,3 +49,15 @@ setInterval(function(){
     $(".block").fadeIn(500);
 
 }, 3000);
+
+    if($(window).innerWidth() < 758){
+        $("#block1").removeClass("px-5");
+        $("#block2").removeClass("px-5");
+        $("#block3").removeClass("p-5").addClass("py-4 text-center");
+        $("#small").addClass("px-2");
+        $("ol").addClass("pl-3");
+        $(".float-right").attr("width", "100%");
+    }  
+    else{
+        $("#small").hide();
+    }

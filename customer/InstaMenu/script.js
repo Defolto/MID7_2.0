@@ -116,7 +116,7 @@ if ($(window).innerWidth() < 1076) {
 if ($(window).innerWidth() < 992) {
     $("#block2 .row div + div").text("");
 }
-if ($(window).innerWidth() < 1300) {
+if ($(window).innerWidth() < 1140) {
     $(".align-text-bottom").text("");
 }
 

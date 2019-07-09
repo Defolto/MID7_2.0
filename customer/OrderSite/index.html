@@ -60,14 +60,14 @@
                     <div class="col-md-6 text-center pt-5">
                         <img src="img/Logo.png" alt="" width="120px" height="90px">
                         <h1>Создание сайта от MID7</h1>
-                        <p>Именно мы создаём сайты, которые приносят вам постоянных клиентов и прибыль.</p>
+                        <p class="text">Именно мы создаём сайты, которые приносят вам постоянных клиентов и прибыль.</p>
                     </div>
                     <div class="col-md-6">
 
                     </div>
                 </div>
             </div>
-            <div class="container-fluid py-4 px-5">
+            <div class="container-fluid pt-5 px-5 bg-light" id="block1">
                 <div class="row d-flex justify-content-center section">
                     <p>Наши сайты</p>
                 </div>
@@ -82,18 +82,18 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 pt-4">
                         <p class="text">Любой наш сайт это в первую очередь сочетания красоты и качества. Не думайте, что если Вы заказали у нас что-то дешёвое, то мы сделаем это безолаберно, это не так!</p>
                         <p class="text">Каждый клиент и его будущий сайт всегда будут отвечать 6 заявленным нами критериям, которых мы придерживаемся во время разработки вашего заказа.</p>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid px-5">
-                <div class="row d-flex justify-content-center section">
+            <div class="container-fluid px-5" id="block2">
+                <div class="row d-flex justify-content-center section text-center">
                     <p>Сравнение с конкурентами</p>
                 </div>
                 <div class="row">
-                    <p class="text" style="font-size: 15px;">*Если таблица не помещается, то переверните экран горизонтально.</p>
+                    <p class="text" style="font-size: 15px;" id="small">*Если таблица не помещается, то переверните экран горизонтально.</p>
                     <div class="col-md-12">
                         <table class="table table-striped text-center table-bordered">
                             <thead>
@@ -148,18 +148,18 @@
             </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-5 p-5" style="background-color: #020204">
+                    <div class="col-md-5 p-5" style="background-color: #020204" id="block3">
                         <p class="text text-white">Скорее! Оставьте заявку и мы свяжемся с Вами в кратчайшие сроки.<br> Так же подарим 3 месяца бесплатного размещения в Интернете!</p>
                         <form action="mail.php" method="POST">
                             <div class="form-row text-white">
-                                <div class="col-md-12 mb-3 px-4">
+                                <div class="col-md-12 mb-3">
                                 <label for="validationDefault03">Имя</label>
                                 <input type="text" class="form-control" id="validationDefault03" name="user_name" placeholder="Максим" required>
                                 <label for="validationDefault04">Email</label>
                                 <input type="email" class="form-control" name="user_email" id="validationDefault04" placeholder="example@yandex.ru" required>
                                 <label for="validationDefault05">Телефон</label>
                                 <input type="text" class="form-control" id="validationDefault05" name="user_phone" placeholder="+7 (900) 541-69-77" required>
-                                <div class="col-md-12" style="display: flex" id="butto">
+                                <div class="col-md-12 mt-3 px-0" style="display: flex" id="butto">
                                     <div style="margin: auto;">
                                         <button type="submit" class="order request" style="background-color: #39cde9">Отправить заявку</button>
                                     </div>
@@ -173,13 +173,13 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
+            <div class="container-fluid pt-5">
                 <div class="row">
                     <div class="col-md-5 text-center">
-                        <img src="img/site.gif" alt="" width="90%">
+                        <img src="img/site.gif" alt="" width="90%" style="overflow: hidden">
                     </div>
                     <div class="col-md-7">
-                        <h1 class="text-center">Разработка любого сайта</h1>
+                        <p class="section text-center">Разработка любого сайта</p>
                         <ol class="text">
                             <li>Вы отправляете свою заявку и наш менеджер связывается с вами для обсуждения заказа</li>
                             <li>Спустя час Вам перезвонят и скажут стоимость вашего будущего сайта</li>
@@ -190,9 +190,9 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
+            <div class="container-fluid pt-3 bg-light mt-3">
                 <div class="row d-flex justify-content-center section">
-                    <p>Сравнение с конкурентами</p>
+                    <p class="section text-center">Сравнение с конкурентами</p>
                 </div>
                 <div class="row bg-light" id="block8">
                     <div class="col-lg-4 text-center type p-3">
@@ -215,13 +215,13 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
+            <div class="container-fluid pt-5">
                 <div class="row d-flex justify-content-center section">
-                    <p>Одни из наших работ</p>
+                    <p class="section text-center">Одни из наших работ</p>
                 </div>
                 <div class="row">
-                    <div class="col-4">
-                        <div class="list-group" id="list-tab" role="tablist">
+                    <div class="col-md-4">
+                        <div class="list-group text" id="list-tab" role="tablist">
                         <a class="list-group-item list-group-item-action active" id="list-one-list" data-toggle="list" href="#list-one" role="tab" aria-controls="one">Ярподдон</a>
                         <a class="list-group-item list-group-item-action" id="list-two-list" data-toggle="list" href="#list-two" role="tab" aria-controls="two">Быстрый-счёт</a>
                         <a class="list-group-item list-group-item-action" id="list-three-list" data-toggle="list" href="#list-three" role="tab" aria-controls="three">Стальметком</a>
@@ -229,7 +229,7 @@
                         <a class="list-group-item list-group-item-action" id="list-five-list" data-toggle="list" href="#list-five" role="tab" aria-controls="four">Ваш будущий сайт</a>
                     </div>
                     </div>
-                    <div class="col-8">
+                    <div class="col-md-8 pt-4">
                         <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="list-one" role="tabpanel" aria-labelledby="list-one-list">
                                 <img src="../img/2.jpg" alt="" class="float-right" width="60%">
@@ -258,7 +258,7 @@
                                     напрямую с разработчиком, который знает своё дело и может посоветовать как лучше. Не жалею, что выбрал именно эту компанию"</p>
                         </div>
                         <div class="tab-pane fade" id="list-four" role="tabpanel" aria-labelledby="list-four-list">
-                                <img src="../img/3.jpg" alt="" class="float-right" width="60%">
+                                <img src="../img/5.jpg" alt="" class="float-right" width="60%">
                                 <p class="title">DepaBilding</p>
                                 <p class="text"><span>Домен:</span><a href="https://depabilding.ru" target="blink" style="color: blue !important"> DepaBilding.ru</a></p>
                                 <p class="text"><span>Срок выполнения:</span> 6 дней</p>
@@ -276,27 +276,26 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
+            <div class="container-fluid py-5 mt-4" id="fon2">
                 <div class="row">
                 <div class="col-12">
                     <form action="mail.php" method="POST">
-                        <div class="form-row text-white">
+                        <div class="form-row text">
                             <div class="col-md-3 mb-3">
-                            <label for="validationDefault03">Имя</label>
+                            <label for="validationDefault03" style="font-weight: 600">Имя</label>
                             <input type="text" class="form-control" id="validationDefault03" name="user_name" placeholder="Максим" required>
                             </div>
                             <div class="col-md-3 mb-3">
-                            <label for="validationDefault04">Email</label>
+                            <label for="validationDefault04" style="font-weight: 600">Email</label>
                             <input type="email" class="form-control" name="user_email" id="validationDefault04" placeholder="example@yandex.ru" required>
                             </div>
                             <div class="col-md-3 mb-3">
-                            <label for="validationDefault05">Телефон</label>
+                            <label for="validationDefault05" style="font-weight: 600">Телефон</label>
                             <input type="text" class="form-control" id="validationDefault05" name="user_phone" placeholder="+7 (900) 541-69-77" required>
                             </div>
                             <div class="col-md-3 text-center" style="display: flex">
                                 <div style="margin: auto;">
-                                <button type="submit" class="order request">Отправить заявку</button>
-                                    <!-- <a href="html/index.html" class="align-center order" id="b1">Оставить заявку</a> -->
+                                <button type="submit" class="order request" style="background-color: #39cde9">Отправить заявку</button>
                                 </div>
                             </div>
                         </div>
