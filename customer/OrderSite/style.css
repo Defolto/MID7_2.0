@@ -53,3 +53,25 @@ label{
     background-color: #a7a7a7 !important;
     border: 0px; 
 }
+.left{
+    background: url("img/left.png");
+    background-size: cover; 
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    cursor: pointer;
+    z-index: 11111;
+}
+.right{
+    background: url("img/right.png");
+    background-size: cover; 
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 11111;
+}

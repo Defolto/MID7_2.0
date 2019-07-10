@@ -25,3 +25,16 @@
     background-position-x: right;
     background-position-y: bottom;
 }
+
+/*animation */
+#fon{
+  animation: head 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+@keyframes head{
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(0%)
+  }
+}

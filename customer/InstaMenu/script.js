@@ -139,3 +139,5 @@ if ($(window).innerWidth() < 590) {
 if ($(window).innerWidth() < 1200) {
     $(".align-text-bottom + div").addClass("text-center");
 }
+
+
