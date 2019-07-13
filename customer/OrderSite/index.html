@@ -21,21 +21,21 @@
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-body">
-                      <form action="mail.php" method="POST">
+                      <form action="../mail.php" method="POST">
                           <legend style="color: #666666">Заполните следующие поля</legend>
 
                           <label for="validationDefault03">Ваше имя:</label>
-                          <input type="text" class="form-control mb-3" name="user_name" id="validationDefault03" placeholder="Максим" required>
+                          <input type="text" class="form-control mb-0" name="user_name" id="validationDefault03" placeholder="Максим" required>
 
                           <label for="validationDefault04">Номер телефона:</label>
-                          <input type="tel" class="form-control mb-3" name="user_phone" id="validationDefault04" placeholder="+7 (999) 99 99 999" required>
+                          <input type="tel" class="form-control mb-0" name="user_phone" id="validationDefault04" placeholder="+7 (999) 99 99 999" required>
 
                           <label for="validationDefault04">Email:</label>
-                          <input type="email" class="form-control mb-3" name="user_email" id="validationDefault04" placeholder="example@mail.ru" required>
+                          <input type="email" class="form-control mb-0" name="user_email" id="validationDefault04" placeholder="example@mail.ru" required>
 
-                          <div class="form-group form-check">
+                          <div class="form-group form-check mt-2">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Cолгасен на обработку персональных данных</label>
+                            <label class="form-check-label mt-0" for="exampleCheck1">Cолгасен на обработку персональных данных</label>
                           </div>
 
                           <button type="submit" id="check" class="btn request" style="background-color: #39cde9">Отправить заявку</button>
@@ -69,6 +69,9 @@
                         <h1>Создание сайта от MID7</h1>
                         <p class="text">Давно хотели свой собственный сайт, который будет приносить прибыль, клиентов и репутацию, но боялись начать?</p>
                         <p class="text">Предоставьте это дело нам. Наши опытные разработчики помогут вам создать и запустить свой собственный сайт в кратчайшее время, а в будущем поддерживать его работоспособность</p>
+                        <div>
+                            <button type="submit" class="order" style="background-color: #39cde9" data-toggle="modal" data-target="#exampleModal">Отправить заявку</button>
+                        </div>
                     </div>
                     <div class="col-md-6">
 
@@ -160,7 +163,7 @@
                 <div class="row">
                     <div class="col-md-5 p-5" style="background-color: #020204" id="block3">
                         <p class="text text-white">Скорее! Оставьте заявку и мы свяжемся с Вами в кратчайшие сроки.<br> Так же подарим 3 месяца бесплатного размещения в Интернете!</p>
-                        <form action="mail.php" method="POST">
+                        <form action="../mail.php" method="POST">
                             <div class="form-row text-white">
                                 <div class="col-md-12 mb-3">
                                 <label for="validationDefault03">Имя</label>
@@ -289,7 +292,7 @@
             <div class="container-fluid py-5 mt-4" id="fon2">
                 <div class="row">
                 <div class="col-12">
-                    <form action="mail.php" method="POST">
+                    <form action="../mail.php" method="POST">
                         <div class="form-row text">
                             <div class="col-md-3 mb-3">
                             <label for="validationDefault03" style="font-weight: 600">Имя</label>

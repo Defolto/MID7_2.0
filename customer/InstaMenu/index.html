@@ -21,7 +21,7 @@
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-body">
-                      <form action="mail.php" method="POST">
+                      <form action="../mail.php" method="POST">
                           <legend style="color: #666666">Заполните следующие поля</legend>
 
                           <label for="validationDefault03">Ваше имя:</label>
@@ -196,7 +196,7 @@
                 <div class="row mb-4">
                     <div class="col-12">
                         <p class="text text-white">Скорее! Оставьте заявку и мы свяжемся с Вами в кратчайшие сроки.<br> Так же подарим 3 месяца бесплатного размещения в Интернете!</p>
-                        <form action="mail.php" method="POST">
+                        <form action="../mail.php" method="POST">
                             <div class="form-row text-white">
                                 <div class="col-md-3 mb-3">
                                 <label for="validationDefault03">Имя</label>
@@ -319,20 +319,21 @@
                                 </div>
                                 </div>
                                 <div class="form-row">
-                                <div class="col-md-4 mb-3">
+                                <div class="col-md-4 mb-0">
                                     <label class="my-1 mr-2" for="price">Ваша цена:</label>
                                     <input type="text" class="form-control bg-light" readonly id="price">
                                 </div>
-                                <div class="col-md-8 mb-3">
-                                    <div>
-                                        <button type="submit" class="order request" style="background-color: #39cde9" data-toggle="modal" data-target="#exampleModal">Отправить заявку</button>
-                                    </div>
+                                <div class="col-md-8 mb-0">
+                                    <p class="text p-3 mb-0" style="font-size: 15px;">* Все цены указаны с примерным расчётом и могут варьироваться +/- 100 рублей. В цену не входит ежемесячный платёж.</p>
 
                                 </div>
 
                                 </div>
+                                
                         </form>
-                        <p class="text" style="font-size: 15px;">* Все цены указаны с примерным расчётом и могут варьироваться +/- 100 рублей. В цену не входит ежемесячный платёж.</p>
+                        <div>
+                            <button type="submit" class="order request mx-0" style="background-color: #39cde9" data-toggle="modal" data-target="#exampleModal">Отправить заявку</button>
+                        </div>
                     </div>
                     <div class="col-md-6">
 
