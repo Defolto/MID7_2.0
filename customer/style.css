@@ -35,10 +35,10 @@
     background: rgb(60, 178, 247);
   }
 @media(max-width: 758px){
-  h2, h2 + p{
+  h2, h2 + p, h2 + p + p{
     text-shadow: -1px 0 1px white, 0 -1px 1px white, 0 1px 1px white, 1px 0 1px white, 0 0 8px white, 0 0 8px white, 0 0 8px white, 2px 2px 3px black;
   }
-  h2 + p{
+  h2 + p, h2 + p + p{
     font-size: 25px !important;
   }
 }
